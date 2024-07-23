@@ -10,52 +10,57 @@ The following command inserts a new employee record into the EMPLOYE table.
 ## sql
 ```
 INSERT INTO EMPLOYE(name, role, salary, age, address, phone)
+VALUES("DIPALI GUNJAL", "MANAGER", 60000, 19, "OM NAGAR DINDOLI SURAT", 8347910240);
+VALUES("ANJALI PUROHIT", "MANAGER", 70000, 21, "MANGALAM DINDOLI SURAT", 9876543212);
+VALUES("DRASHTI PATEL", "CEO", 90000, 19, "UMIYA NAGAR DINDOLI SURAT", 9765443321);
+VALUES("MESHVA PATEL", "CEO", 10000, 20, "UMIYA PARK DINDOLI SURAT", 8976534211);
 VALUES("KASHISH PATIL", "ACCOUNTER", 70000, 18, "UMA NAGAR DINDOLI SURAT", 9879543212);
+
+
+```
+## sql
+```
 Updating an Employee Record
-
-```
-## sql
-```
 UPDATE EMPLOYE SET phone = "9765443321" WHERE id = 3;
+
+```
+## sql
+```
 Deleting an Employee Record
-
-```
-## sql
-```
 DELETE FROM EMPLOYE WHERE name = "KASHISH PATIL";
+
+```
+## sql
+```
 Retrieving All Employee Records
-
-```
-## sql
-```
 SELECT * FROM EMPLOYE;
+
+```
+## sql
+```
 Retrieving Distinct Employee Names
-
-```
-## sql
-```
 SELECT DISTINCT name FROM EMPLOYE;
+
+```
+## sql
+```
 Retrieving Distinct Employee Salaries
-
-```
-## sql
-```
 SELECT DISTINCT salary FROM EMPLOYE;
+
+```
+## sql
+```
 Retrieving Employees by Role
-
-```
-## sql
-```
 SELECT * FROM EMPLOYE WHERE role LIKE "MANAGER%";
+
+```
+## sql
+```
 Retrieving Employees by Name Pattern
-
-```
-## sql
-```
 SELECT * FROM EMPLOYE WHERE name LIKE "AN%";
-Retrieving Employees by Age and Salary
 
 ```
 ## sql
 ```
+Retrieving Employees by Age and Salary
 SELECT * FROM EMPLOYE WHERE age > 19 AND salary > 60000;
